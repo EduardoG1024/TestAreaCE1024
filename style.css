@@ -1,0 +1,286 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: linear-gradient(#7226ff, #160078, #010030);
+}
+/*----------TITULOS Y TEXTOS----------*/
+h1, h2, h3, h4, h5, p{
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    margin: 5px;
+}
+h1{
+    font-size: 35px;
+}
+p{
+    font-weight: 600;
+    color: #fff;
+    margin: 5px;
+}
+ul>li{
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+/*-----IMAGENES Y ANIMACIONES-----*/
+.imgicon{
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 60%;
+    box-shadow: 0px 0px 20px #000;
+    animation-name: imgexpoanimation;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+@keyframes imgexpoanimation{
+    0% {transform: scale(1);}
+    100% {transform: scale(0.9);}
+}
+.imgredessociales{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    transition: 0.3s ease-in-out;
+}
+.imgredessociales:hover{
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.imginvitado{
+    width: 300px;
+    height: fit-content;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px #000;
+    animation-name: invitadoshake;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+.imginvitado:hover{
+    cursor: pointer;
+}
+@keyframes invitadoshake{
+    0% {transform: rotate(5deg);}
+    100% {transform: rotate(-5deg);}
+}
+.imgcosplayer{
+    width: 250px;
+    height: fit-content;
+    margin: 5px;
+    border-radius: 10px;
+}
+.imgcolab{
+    width: 60px;
+    height: fit-content;
+    margin: 10px;
+    border-radius: 50%;
+}
+/*----------MAIN----------*/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin: 0px;
+    padding: 0px;
+}
+/*----------CONTENIDO DE LA PAGINA----------*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    background-image: url('img/fondo2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.containerhead1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+}
+.btnhead{
+    width: 200px;
+    height: fit-content;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: #f5b727;
+    border: #fff solid 2px;
+    transition: 0.4s ease-in-out;
+}
+.btnhead:hover{
+    background-color: #c827f5;
+    cursor: pointer;
+}
+.containerhead2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+/*-----------CONTENEDOR REDES SOCIALES----------*/
+.containerredessociales{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: #fff solid 1px;
+    border-radius: 30px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+}
+/*----------CONTENEDOR QUE ENCONTRARAS----------*/
+.containerqueencontraras{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+/*----------CONTENEDOR ETIQUETAS----------*/
+.containeretiquetas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.etiquetas{
+    background: linear-gradient(90deg, #ea8d8d, #a890fe);
+    margin: 5px;
+    padding: 3px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+}
+/*----------CONTENEDOR INVITADOS-----------*/
+.containerinvitados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.imginvitadosespeciales{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/*----------CONTENEDOR DE ORGANIZADORES----------*/
+.containerconductora{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(90deg, #642b73, #3a6186);
+    overflow-x: auto;
+}
+.containerjuezes{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(90deg, #3a6186, #642b73);
+    overflow-x: auto;
+}
+.containerkpop{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(90deg, #642b73, #3a6186);
+    overflow-x: auto;
+}
+.containercosplayers{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    height: fit-content;
+    background: linear-gradient(90deg, #3a6186, #642b73);
+    overflow-x: auto;
+}
+/*----------CONTENEDOR DE HORARIOS----------*/
+.containerhorarios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+.containersabado{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+}
+.containerdomingos{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+}
+/*----------CONTENEDOR COLABORADORES O PATROCINADORES----------*/
+.containerpatrocinadores{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #000000;
+}
+/*----------FOOTER FINAL PAGE----------*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    background-image: url('img/fondo2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
