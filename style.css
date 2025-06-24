@@ -3,10 +3,12 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    height: fit-content;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background: linear-gradient(#7226ff, #160078, #010030);
+    background-color: #3c099b;
 }
 /*----------TITULOS Y TEXTOS----------*/
 h1, h2, h3, h4, h5, p{
@@ -49,11 +51,6 @@ ul>li{
     width: 40px;
     height: 40px;
     margin: 5px;
-    transition: 0.3s ease-in-out;
-}
-.imgredessociales:hover{
-    margin-left: 10px;
-    margin-right: 10px;
     cursor: pointer;
 }
 .imginvitado{
@@ -77,14 +74,16 @@ ul>li{
     100% {transform: rotate(-5deg);}
 }
 .imgcosplayer{
-    width: 150px;
+    width: 90%;
     height: fit-content;
     margin: 5px;
+    object-fit: contain;
     border-radius: 10px;
 }
 .imgcolab{
-    width: 60px;
-    height: fit-content;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
     margin: 10px;
     border-radius: 50%;
 }
@@ -107,6 +106,7 @@ header{
     flex-wrap: wrap;
     width: 100%;
     height: fit-content;
+    margin-bottom: 10px;
     background-image: url('img/fondo2.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -118,11 +118,23 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: fit-content;
+    height: fit-content;
     margin: 10px;
+}
+.containerhead2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin: 0px;
+    padding: 0px;
 }
 .btnhead{
     width: 200px;
-    height: fit-content;
+    height: 40px;
     margin: 10px;
     border-radius: 30px;
     background-color: #f5b727;
@@ -145,37 +157,46 @@ header{
     align-items: center;
     justify-content: space-evenly;
     width: 300px;
-    height: fit-content;
+    height: 60px;
     margin-top: 10px;
     margin-bottom: 10px;
     border: #fff solid 1px;
     border-radius: 30px;
-    background-color: transparent;
-    backdrop-filter: blur(20px);
 }
 /*----------CONTENEDOR QUE ENCONTRARAS----------*/
-.containerqueencontraras{
+.container4novedades{
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 100%;
     height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url('img/cardA.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-/*----------CONTENEDOR ETIQUETAS----------*/
-.containeretiquetas{
+.queencontrarascard{
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.etiquetas{
-    background: linear-gradient(90deg, #ea8d8d, #a890fe);
-    margin: 5px;
-    padding: 3px;
-    width: fit-content;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 300px;
     height: fit-content;
-    border-radius: 20px;
+    margin: 10px;
+    padding: 0px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #000;
+}
+.imgqueencontraras{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin: 10px;
 }
 /*----------CONTENEDOR INVITADOS-----------*/
 .containerinvitados{
@@ -183,12 +204,18 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .imginvitadosespeciales{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    height: fit-content;
 }
 /*----------CONTENEDOR DE ORGANIZADORES----------*/
 .containerorganizadores{
@@ -200,13 +227,17 @@ header{
     height: fit-content;
     margin-top: 10px;
     margin-bottom: 10px;
+    background-image: url('img/cardA.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .containercosplayers{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 180px;
+    width: 200px;
     height: fit-content;
     margin: 10px;
     background: linear-gradient(90deg, #3a6186, #642b73);
@@ -214,13 +245,13 @@ header{
     transition: 0.3s ease-in-out;
 }
 .containercosplayers:hover{
-    box-shadow: 0px 0px 20px #dcef0a;
+    box-shadow: 0px 0px 20px #f6ff9a;
 }
 /*----------CONTENEDOR DE HORARIOS----------*/
 .containerhorarios{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
     height: fit-content;
@@ -230,19 +261,76 @@ header{
 }
 .containersabado{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     width: fit-content;
     height: fit-content;
+    margin: 10px;
 }
-.containerdomingos{
+.containerdomingo{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     width: fit-content;
     height: fit-content;
+    margin: 10px;
+}
+/*----------CONTENEDOR DE REGISTRO----------*/
+.containerregistrate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+.registratecard1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: fit-content;
+    margin: 0px;
+    padding: 0px;
+}
+.btnregistrate{
+    width: 100%;
+    height: 40px;
+    margin: 10px;
+    background-color: #f5b727;
+    border: #fff solid 2px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 20px;
+}
+.registratecard2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+    height: fit-content;
+    margin: 0px;
+    padding: 0px;
+}
+.registratebases{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: fit-content;
+    margin: 0px;
+    padding: 0px;
 }
 /*----------CONTENEDOR COLABORADORES O PATROCINADORES----------*/
 .containerpatrocinadores{
@@ -254,7 +342,7 @@ header{
     height: fit-content;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #000000;
+    padding: 0px;
 }
 /*----------FOOTER FINAL PAGE----------*/
 footer{
@@ -263,7 +351,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 200px;
+    height: 100px;
     background-image: url('img/fondo2.jpg');
     background-repeat: no-repeat;
     background-position: center;
