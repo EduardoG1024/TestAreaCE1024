@@ -77,7 +77,7 @@ ul>li{
     100% {transform: rotate(-5deg);}
 }
 .imgcosplayer{
-    width: 250px;
+    width: 150px;
     height: fit-content;
     margin: 5px;
     border-radius: 10px;
@@ -191,44 +191,30 @@ header{
     flex-direction: column;
 }
 /*----------CONTENEDOR DE ORGANIZADORES----------*/
-.containerconductora{
+.containerorganizadores{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-evenly;
-    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     height: fit-content;
-    background: linear-gradient(90deg, #642b73, #3a6186);
-    overflow-x: auto;
-}
-.containerjuezes{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    flex-direction: row;
-    width: 100%;
-    height: fit-content;
-    background: linear-gradient(90deg, #3a6186, #642b73);
-    overflow-x: auto;
-}
-.containerkpop{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    flex-direction: row;
-    width: 100%;
-    height: fit-content;
-    background: linear-gradient(90deg, #642b73, #3a6186);
-    overflow-x: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .containercosplayers{
     display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 180px;
     height: fit-content;
+    margin: 10px;
     background: linear-gradient(90deg, #3a6186, #642b73);
-    overflow-x: auto;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.containercosplayers:hover{
+    box-shadow: 0px 0px 20px #dcef0a;
 }
 /*----------CONTENEDOR DE HORARIOS----------*/
 .containerhorarios{
